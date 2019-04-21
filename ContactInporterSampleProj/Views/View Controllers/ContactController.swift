@@ -22,7 +22,12 @@ class ContactController {
         print(newContact.lastName)
         print(newContact.phoneNumer)
         print("\(String(describing: newContact.thumbnailImageData))")
-        print(birthDay?.date?.asString)
+        
+        guard let birthDay = birthDay  else {
+            return
+        }
+        print("🥳\(String(describing: birthDay.date?.asString)))🥳")
+        }
 
     }
-}
+

@@ -43,6 +43,4 @@ class ContactTVCell: UITableViewCell {
         iconImageView.clipsToBounds = true
         
     }
-    
-   
 }
